@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhamad Faridz Marwan — Front-End Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================= NAVBAR ======================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#beranda" class="navbar__logo">MF.<span class="dot">.</span></a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#beranda" class="navbar__link active">Beranda</a>
+        <a href="#tentang" class="navbar__link">Tentang</a>
+        <a href="#sertifikat" class="navbar__link">Sertifikat</a>
+        <a href="#kontak" class="navbar__link">Kontak</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <!-- Toggle Tema Gelap/Terang -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Ubah tema gelap/terang">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        </button>
+
+        <button class="burger" id="burgerBtn" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= HERO / BERANDA ======================= -->
+    <section class="hero" id="beranda">
+      <div class="hero__bg-grid"></div>
+
+      <div class="hero__inner">
+        <div class="hero__text" data-aos="slide-right">
+          <h1 class="hero__title">
+            Halo, Saya Muhamad Faridz Marwan
+          </h1>
+          <p class="hero__role">Front-End Developer &mdash; meracik antarmuka yang hidup dan enak dipakai.</p>
+          <p class="hero__desc">Terbiasa mengubah rancangan desain menjadi kode yang rapi, responsif, dan penuh detail animasi kecil yang bikin pengalaman pengguna terasa istimewa.</p>
+
+          <div class="hero__cta">
+            <a href="#sertifikat" class="btn btn--primary">Lihat Sertifikat</a>
+            <a href="#kontak" class="btn btn--ghost">hubungi-saya</a>
+          </div>
+        </div>
+
+        <!-- Fitur Utama: Kartu Foto Beranimasi 3D Tilt -->
+        <div class="hero__card-wrap" data-aos="slide-left">
+          <div class="tilt-card" id="tiltCard">
+            <div class="tilt-card__glare"></div>
+            <div class="tilt-card__photo">
+              <img src="assets/Foto-profil-jpg.jpg" alt="Foto profil developer" draggable="false">
+            </div>
+            <div class="tilt-card__badge">
+              <span class="pulse-dot"></span> Tersedia untuk project baru
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#tentang" class="scroll-hint" aria-label="Gulir ke bawah">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ======================= TENTANG SAYA ======================= -->
+    <section class="tentang" id="tentang">
+      <div class="container">
+        <p class="eyebrow" data-aos="fade-up">tentang saya</p>
+        <h2 class="section-title" data-aos="fade-up">Kenalan lebih dekat</h2>
+
+        <div class="tentang__grid">
+          <div class="tentang__desc" data-aos="fade-up">
+            <p>
+              Saya seorang Front-End Developer dengan minat besar pada detail interaksi dan animasi antarmuka.
+              Bagi saya, sebuah website yang baik bukan cuma soal tampil rapi, tapi juga terasa responsif dan
+              "hidup" setiap kali disentuh pengguna &mdash; dari transisi tombol sampai bagaimana halaman merespons gulir layar.
+            </p>
+            <p>
+              Saya percaya kode yang bersih dan performa yang ringan adalah pondasi dari pengalaman pengguna yang
+              menyenangkan. Setiap project saya kerjakan dengan memperhatikan aksesibilitas, kecepatan muat, dan
+              konsistensi desain di berbagai ukuran layar.
+            </p>
+          </div>
+
+          <div class="tentang__stats" data-aos="fade-up">
+            <div class="stat-block">
+              <span class="stat-block__label">01 / pengalaman</span>
+              <span class="stat-block__value">5 Bulan</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-block__label">02 / project selesai</span>
+              <span class="stat-block__value">3 Project</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-block__label">03 / Bahasa program yang saya kuasai</span>
+              <span class="stat-block__value">HTML · CSS · JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SERTIFIKAT ======================= -->
+    <section class="sertifikat" id="sertifikat">
+      <div class="container">
+        <p class="eyebrow" data-aos="fade-up">bukti belajar</p>
+        <h2 class="section-title" data-aos="fade-up">Sertifikat</h2>
+
+        <div class="cert-grid">
+          <button class="cert-thumb" data-aos="fade-up" data-cert-title="Sertifikat Front-End Web Development">
+            <img src="assets/sertif-1-jpg.jpg" alt="Sertifikat Front-End Web Development">
+          </button>
+          <button class="cert-thumb" data-aos="fade-up" data-cert-title="Sertifikat JavaScript Fundamental">
+            <img src="assets/sertif-2-jpg.jpg" alt="Sertifikat JavaScript Fundamental">
+          </button>
+          <button class="cert-thumb" data-aos="fade-up" data-cert-title="Sertifikat UI/UX Design Dasar">
+            <img src="assets/sertif-3-jpg.jpg" alt="Sertifikat UI/UX Design Dasar">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox / Modal Sertifikat -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox__content">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">&times;</button>
+        <img src="" alt="" id="lightboxImage">
+        <p class="lightbox__caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- ======================= KONTAK ======================= -->
+    <section class="kontak" id="kontak">
+      <div class="container">
+        <p class="eyebrow" data-aos="fade-up">mari terhubung</p>
+        <h2 class="section-title" data-aos="fade-up">Hubungi Saya</h2>
+        <div class="kontak__grid">
+          <!-- KODE BARU (Sudah terhubung ke Web3Forms): -->
+  <form action="https://api.web3forms.com/submit" method="POST">
+  <!-- 1. Tambahkan Access Key Web3Forms di sini -->
+  <input type="hidden" name="access_key" value="80154237-ff0b-4d9f-9388-ac52348d4ead">
+
+  <!-- 2. Tambahkan opsional ini agar subject email yang masuk rapi -->
+  <input type="hidden" name="subject" value="Pesan Baru dari Portfolio Website">
+
+  <div class="form-group">
+    <label for="nama">Nama</label>
+    <!-- Atribut name="name" disesuaikan untuk Web3Forms -->
+    <input type="text" id="nama" name="name" placeholder="Nama lengkap kamu" required>
+  </div>
+
+  <div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+</div>
+
+  <div class="form-group">
+    <label for="pesan">Pesan</label>
+    <!-- Atribut name="message" disesuaikan untuk Web3Forms -->
+    <textarea id="textarea" id="pesan" name="message" rows="5" placeholder="Ceritakan project kamu..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn--primary btn--full">Kirim Pesan</button>
+  <p class="form-status" id="formStatus"></p>
+</form>
+
+          <div class="kontak__discord" data-aos="fade-up">
+            <p class="kontak__discord-label">Lebih suka ngobrol santai?</p>
+            <a href="https://discord.com/users/@ranzsikma" target="_blank" rel="noopener" class="discord-btn">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.096 2.157 2.42 0 1.333-.955 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+              Hubungi via Discord
+            </a>
+            <div class="discord-card">
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Muhamad Faridz Marwan. Dibuat dengan HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

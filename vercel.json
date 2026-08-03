@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "discord-site-verification",
+          "value": "dh=0da85805a13db5d2719d9a1a4bf1ccc5cc688c3d"
+        }
+      ]
+    }
+  ]
+}
