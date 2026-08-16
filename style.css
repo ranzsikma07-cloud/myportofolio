@@ -751,3 +751,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-decoration: underline;
 }
 
+.project-card__links {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+/* Mengecilkan Tombol Project */
+.btn--project {
+  padding: 8px 16px;       /* Memperkecil ruang dalam (atas-bawah 8px, kiri-kanan 16px) */
+  font-size: 0.8rem;       /* Memperkecil ukuran teks */
+  width: auto;             /* Memastikan lebar tombol menyesuaikan teks (tidak melebar) */
+  display: inline-flex;     /* Menjaga bentuk tombol tetap rapi */
+  margin-top: 12px;        /* Memberi jarak atas dari tag teknologi */
+}
